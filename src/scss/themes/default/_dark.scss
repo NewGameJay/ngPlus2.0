@@ -5,5 +5,22 @@
   // --x-body-bg-rgb: #{to-rgb($blue)};
   // --x-tertiary-bg: #{$blue-600};
 
+  body {
+    background-color: var(--x-body-bg);
+    color: var(--x-body-color);
+  }
+
+  .navbar {
+    background-color: var(--x-navbar-bg);
+  }
+
+  a {
+    color: var(--x-link-color);
+
+    &:hover {
+      color: lighten(var(--x-link-color), 10%);
+    }
+  }
+
 
 }
