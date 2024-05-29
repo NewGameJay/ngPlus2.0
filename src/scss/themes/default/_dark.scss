@@ -22,5 +22,14 @@
     }
   }
 
+  // Override Bootstrap classes
+  .bg-dark {
+    background-color: var(--x-navbar-bg) !important;
+  }
+
+  .text-dark {
+    color: var(--x-body-color) !important;
+  }
+
 
 }
