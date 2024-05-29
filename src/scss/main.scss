@@ -37,7 +37,7 @@ $color-mode-type: data;
 // }
 
 
-@include color-mode(dark) {
+[data-bs-theme="dark"] {
   @include dark;
 }
 

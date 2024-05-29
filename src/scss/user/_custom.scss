@@ -66,29 +66,30 @@
 	background-color: #CD0EDA; // Replace with your desired shade of purple
   }
 
-  // Define custom dark theme colors
+// Define custom dark theme colors
 $body-bg-dark: #33215D;       // Background color for dark theme
 $body-color-dark: #f5f5f5;    // Text color for dark theme
 $navbar-bg-dark: #33215D;     // Navbar background color for dark theme
 $link-color-dark: #a29bfe;    // Link color for dark theme
-// Add more custom variables as needed
-[data-bs-theme="dark"] {   
-	body {
-	  background-color: $body-bg-dark;
-	  color: $body-color-dark;
-	}
-  
-	.navbar {
-	  background-color: $navbar-bg-dark;
-	}
-  
-	a {
-	  color: $link-color-dark;
-  
-	  &:hover {
-		color: lighten($link-color-dark, 10%);
-	  }
-	}
-  
-	// Add more custom styles for dark theme as needed
+
+// Custom styles for dark theme
+[data-bs-theme="dark"] {
+  body {
+    background-color: $body-bg-dark;
+    color: $body-color-dark;
   }
+
+  .navbar {
+    background-color: $navbar-bg-dark;
+  }
+
+  a {
+    color: $link-color-dark;
+
+    &:hover {
+      color: lighten($link-color-dark, 10%);
+    }
+  }
+
+  // Add more custom styles for dark theme as needed
+}
