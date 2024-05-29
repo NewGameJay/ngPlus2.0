@@ -8,7 +8,7 @@
     "watch:parcel": "run-p watch:css watch:js",
     "watch:css": "parcel watch ./src/scss/*.scss --dist-dir ./dist/css",
     "watch:js": "parcel watch ./src/js/*.js --dist-dir ./dist/js",
-    "build": "run-s clean build:parcel build:eleventy purge:css",
+    "build": "npm-run-all clean build:parcel build:eleventy purge:css",
     "build:eleventy": "cross-env ELEVENTY_ENV=production eleventy",
     "build:parcel": "run-p build:css build:js",
     "build:css": "parcel build ./src/scss/*.scss --dist-dir ./build/css",
